@@ -9,7 +9,7 @@
 <img width="1619" height="843" alt="Landing Page" src="https://github.com/user-attachments/assets/47d93076-cae8-4edc-9b40-5047d8557e14" />
 </pre>
 
- [Live Here](shadowdevforge.github.io/ShadePress)
+ [Live Here](https://shadowdevforge.github.io/ShadePress)
 
 </div>
 
