@@ -46,44 +46,44 @@ margin-right: auto;
 line-height: 1.5;
 }
 
-/* --- Buttons --- */
+/* Buttons */
 .actions {
-display: flex;
-gap: 1rem;
-justify-content: center;
-margin-bottom: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .action-btn {
-display: inline-block;
-padding: 0.8rem 1.6rem;
-border-radius: 99px;
-font-weight: 600;
-text-decoration: none;
-transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 99px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn-primary {
-background: var(--primary-color);
-color: var(--bg-color);
-border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    /* FIX: Use !important to override global .markdown-body a color */
+    color: var(--bg-color) !important; 
+    border: 1px solid var(--primary-color);
 }
 .btn-primary:hover {
-transform: translateY(-2px);
-box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-color: var(--bg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    color: var(--bg-color) !important;
 }
 
 .btn-secondary {
-background: var(--sidebar-bg);
-color: var(--text-color);
-border: 1px solid var(--border-color);
+    background: var(--sidebar-bg);
+    color: var(--text-color) !important; /* Good practice to force this too */
+    border: 1px solid var(--border-color);
 }
 .btn-secondary:hover {
-background: var(--border-color);
-color: var(--text-color);
+    background: var(--border-color);
+    color: var(--text-color) !important;
 }
-
 /* --- Feature Grid --- */
 .features-container {
 max-width: 1100px;
